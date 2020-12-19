@@ -29,6 +29,10 @@ public void draw()
    float distance1 = dist((float)bob.getX(), (float)bob.getY(), (float)meteor.get(i).getX(), (float)meteor.get(i).getY());
     if(distance1 < 20) {
       meteor.remove(i);
+      bob.myCenterX = 250;
+      bob.myCenterY = 250;
+      bob.myXspeed = 0;
+      bob.myYspeed = 0;
     }
   }
   for(int i = 0; i < shots.size(); i++){
